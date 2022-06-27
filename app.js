@@ -271,13 +271,13 @@ function checkCorrect(tile){
 
 function clearPrevious(){
     //Access all of tht tiles
-    let tiles = qsa(".tiles");
+    let tiles = qsa(".tile");
     //remove tiles
     for(let i = 0;i < tiles.length;i++){
         tiles[i].remove();
     }
     //if there is a timer clear it
-    if(timer) clearTimeout(time);
+    if(timer) clearTimeout(timer);
     //Deselect any numbers
     for(let i = 0;i < id("number-container").children.length;i++){
         id("number-container").children[i].classList.remove("selected");
